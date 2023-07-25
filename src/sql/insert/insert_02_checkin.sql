@@ -1,6 +1,6 @@
-INSERT INTO raw.checkin
-VALUES 
-(
-  %(business_id)s,
-  %(date)s
-);
+-- INSERT INTO raw.checkin 
+-- VALUES 
+-- (
+--   %(business_id)s,
+--   %(date)s
+-- );

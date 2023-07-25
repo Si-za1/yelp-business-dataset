@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS raw.users;
+
+CREATE TABLE raw.users (
+    user_id varchar,
+    name varchar,
+    review_count varchar,
+    yelping_since varchar,
+    friends varchar,
+    useful varchar,
+    funny varchar,
+    cool varchar,
+    fans varchar,
+    elite varchar,
+    average_stars varchar,
+    compliment_hot varchar,
+    compliment_more varchar,
+    compliment_profile varchar,
+    compliment_cute varchar,
+    compliment_list varchar,
+    compliment_note varchar,
+    compliment_plain varchar,
+    compliment_cool varchar,
+    compliment_funny varchar,
+    compliment_writer varchar,
+    compliment_photos varchar)

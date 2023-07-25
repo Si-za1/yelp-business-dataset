@@ -1,9 +1,9 @@
-INSERT INTO raw.tip
-VALUES 
-(
-  %(user_id)s,
-  %(business_id)s,
-  %(text)s,
-  %(date)s,
-  %(compliment_count)s
-);
+-- INSERT INTO raw.tip
+-- VALUES 
+-- (
+--   %(text)s,
+--   %(date)s,
+--   %(compliment_count)s,
+--   %(business_id)s,
+--   %(user_id)s
+-- );

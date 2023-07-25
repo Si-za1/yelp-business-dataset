@@ -12,6 +12,7 @@ def create_connection_database(database):
     type 'string'
     """
     connection = None
+    
     try:
         connection = pg2.connect(
             host = os.getenv('HOST'),
@@ -20,20 +21,21 @@ def create_connection_database(database):
             port = os.getenv('PORT'),
             database = database
         )
+       
     except Exception as e:
         print("An error occurred: {}".format(e))
     
     return connection
 
-def execute_query(connection, query, value=None):
-    """
-    Execute database query.
-    """   
-    try:
-        cursor = connection.cursor()
-        cursor.execute(query, value)
-        connection.commit()
-    except Exception as e:
-        print("An error occurred: {}".format(e))
-    else:
-        return cursor
+# def execute_query(connection, query, value=None):
+#     """
+#     Execute database query.
+#     """   
+#     try:
+#         cursor = connection.cursor()
+#         cursor.execute(query, value)
+#         connection.commit()
+#     except Exception as e:
+#         print("An error occurred: {}".format(e))
+#     else:
+#         return cursor
