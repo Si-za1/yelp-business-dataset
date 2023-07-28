@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS dwh.dim_users;
+DROP TABLE IF EXISTS dwh.dim_users CASCADE;
 
 CREATE TABLE dwh.dim_users (
     user_id varchar PRIMARY KEY,

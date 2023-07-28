@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS dwh.dim_business;
+DROP TABLE IF EXISTS dwh.dim_business CASCADE;
 CREATE TABLE dwh.dim_business (
     business_id VARCHAR PRIMARY KEY,
     name VARCHAR,
@@ -6,6 +6,8 @@ CREATE TABLE dwh.dim_business (
     city VARCHAR,
     state VARCHAR,
     stars FLOAT,
-    categories VARCHAR,
-    hours DATE
+    review_count INT,
+    category TEXT[],
+    hours TEXT[]
 )
+
