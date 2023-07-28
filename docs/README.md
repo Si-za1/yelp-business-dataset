@@ -1,10 +1,10 @@
-**Yelp_Data ETL and Analysis**
+# Yelp_Data ETL and Analysis
 
-**Overview:**
+## Overview:
 
 This project focuses on extracting, transforming, and loading (ETL) Yelp data for analysis. The data is downloaded and connected to the PGAdmin4 using a Python script that follows the ETL pipeline. The pipeline involves processing raw data, creating dimension and fact tables, and conducting analysis for valuable insights.
 
-##Folder Structure:
+### Folder Structure:
 
 The project directory is structured as follows:
 
@@ -34,14 +34,14 @@ The project directory is structured as follows:
 
 
 ------------------------
-**Problems Faced:**
+### Problems Faced:
 
 **Large Data Size**: Loading the data into the raw tables took around 3 hours due to the large volume of data. This led to slow execution times for the entire system.
 
 **System Limitations**: Creating separate lookup tables was not feasible due to system limitations caused by the large data volume.
 
 ---------------------
-**Steps Taken:**
+### Steps Taken:
 
 **Raw Data Processing**: Initially, the focus was on creating and loading the raw tables, which acted as the OLAP (Online Analytical Processing) layer. All the data was stored in this layer.
 
@@ -50,10 +50,11 @@ The project directory is structured as follows:
 **Selective Cleaning**: To tackle the challenge of dealing with the large dataset, I decided to focus on cleaning and loading only the essential attributes and data into the dimension tables. These dimension tables were then treated as standard tables for analysis.
 
 
-**Functions**
+### Functions
 *def execute_sql_file(cursor, sql_file_path)*
 
-```This function executes the SQL commands stored in a SQL file. It takes in a database cursor and the path to the SQL file as inputs. The function reads the SQL file, parses the commands, and executes the files present in the directory sequentially using the provided cursor.```
+```This function executes the SQL commands stored in a SQL file. It takes in a database cursor and the path to the SQL file as inputs.``` 
+```The function reads the SQL file, parses the commands, and executes the files present in the directory sequentially using the provided cursor.```
 
 *def create_tables(connection, tables_sql_directory)*
 ``` The create_tables function is responsible for creating database tables based on the SQL scripts stored in the tables_sql_directory. It takes a database connection and the path to the directory containing the SQL scripts for table creation as input. The function reads each SQL file in the directory and executes the commands to create the tables in the database. ```
@@ -137,7 +138,7 @@ And, the visualization has been done using **Power BI**
 
 ----------------------
 **Document Link**:
-[All the screenshots of the analysis are kept here: ](https://docs.google.com/document/d/1USr7yQkzmcx9m8-XWBUvIq5u_f-7jXAThRHSrcOw5h0/edit?usp=sharing)
+[All the screenshots of the analysis are kept here ](https://docs.google.com/document/d/1USr7yQkzmcx9m8-XWBUvIq5u_f-7jXAThRHSrcOw5h0/edit?usp=sharing)
 
 
 
