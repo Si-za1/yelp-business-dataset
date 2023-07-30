@@ -7,38 +7,39 @@ This project focuses on extracting, transforming, and loading (ETL) Yelp data fo
 The project directory is structured as follows:
 
 - data
-  |- [all the .json data files]
+  - all the .json data files
 - docs
-  |- [all the extra files and .md files]
+  - analysis [all the queries are kept here]
+  - all the extra files and .md files
 - dwh
-  |- insert
-     |- [all insert files for the std pipeline]
-  |- tables
-     |- [all create files for the raw pipeline]
-  |- pipeline
-     |- extraction.py
-     |- load.py
+    - insert
+        - all insert files for the std pipeline
+    - tables
+      - all create files for the raw pipeline
+    - pipeline
+      - extraction.py
+      - load.py
 - src
-  |- database
-     |- __init__.py
-     |- connection.py
-  |- pipeline
-     |- extraction.py
-     |- load.py
-  |- sql
-     |- [all insert files for the raw pipeline]
+  - database
+     - __init__.py
+     - connection.py
+  - pipeline
+     - extraction.py
+     - load.py
+  - sql
+     - all insert files for the raw pipeline
 - .gitignore
 - main.py
 - mig.py
 
 ## Problems Faced
-- Large Data Size: Loading the data into the raw tables took around 3 hours due to the large volume of data. This led to slow execution times for the entire system.
-- System Limitations: Creating separate lookup tables was not feasible due to system limitations caused by the large data volume.
+- **Large Data Size:** Loading the data into the raw tables took around 3 hours due to the large volume of data. This led to slow execution times for the entire system.
+- **System Limitations:** Creating separate lookup tables was not feasible due to system limitations caused by the large data volume.
 
 ## Steps Taken
-1. Raw Data Processing: Initially, the focus was on creating and loading the raw tables, which acted as the OLAP (Online Analytical Processing) layer. All the data was stored in this layer.
-2. Dimension and Fact Tables: After loading the raw data, worked on identifying the dimension and fact tables required for analysis.
-3. Selective Cleaning: To tackle the challenge of dealing with the large dataset, I decided to focus on cleaning and loading only the essential attributes and data into the dimension tables. These dimension tables were then treated as standard tables for analysis.
+1. **Raw Data Processing:** Initially, the focus was on creating and loading the raw tables, which acted as the OLAP (Online Analytical Processing) layer. All the data was stored in this layer.
+2. **Dimension and Fact Tables:** After loading the raw data, worked on identifying the dimension and fact tables required for analysis.
+3. **Selective Cleaning:** To tackle the challenge of dealing with the large dataset, I decided to focus on cleaning and loading only the essential attributes and data into the dimension tables. These dimension tables were then treated as standard tables for analysis.
 
 ## Functions
 - `execute_sql_file(cursor, sql_file_path)`: Executes the SQL commands stored in a SQL file using the provided database cursor.
