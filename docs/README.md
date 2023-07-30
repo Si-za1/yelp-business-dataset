@@ -12,21 +12,21 @@ The project directory is structured as follows:
   |- [all the extra files and .md files]
 - dwh
   |- insert
-    |- [all insert files for the std pipeline]
+     |- [all insert files for the std pipeline]
   |- tables
-    |- [all create files for the raw pipeline]
+     |- [all create files for the raw pipeline]
   |- pipeline
-    |- extraction.py
-    |- load.py
+     |- extraction.py
+     |- load.py
 - src
   |- database
-    |- __init__.py
-    |- connection.py
+     |- __init__.py
+     |- connection.py
   |- pipeline
-    |- extraction.py
-    |- load.py
+     |- extraction.py
+     |- load.py
   |- sql
-    |- [all insert files for the raw pipeline]
+     |- [all insert files for the raw pipeline]
 - .gitignore
 - main.py
 - mig.py
