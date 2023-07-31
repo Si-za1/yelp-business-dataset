@@ -63,7 +63,7 @@ The visualization has been done using Power BI to gain valuable insights from th
 3. Run `mig.py` to execute the standard pipeline, which processes and loads data into the dimension and fact tables.
 
 ## Document Link
-All the screenshots of the analysis are kept [here](https://docs.google.com/document/d/1USr7yQkzmcx9m8-XWBUvIq5u_f-7jXAThRHSrcOw5h0/edit).
+All the screenshots of the analysis are kept [here](https://docs.google.com/document/d/1USr7yQkzmcx9m8-XWBUvIq5u_f-7jXAThRHSrcOw5h0/edit?usp=sharing).
 
 ## Presentation Link 
 Link to the presentation [here](https://www.canva.com/design/DAFqHBvq7AQ/F6H6CFjDVheF2m0DqSaixA/view?utm_content=DAFqHBvq7AQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink).
